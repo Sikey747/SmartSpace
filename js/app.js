@@ -652,6 +652,15 @@
                 }
             }));
         }
+        function functions_menuClose() {
+            bodyUnlock();
+            document.documentElement.classList.remove("menu-open");
+        }
+        function menuCloseBackDrop() {
+            document.addEventListener("click", (function(e) {
+                if (document.querySelector(".menu-open")?.classList.contains("menu-open") && !e.target.closest(".header")) functions_menuClose();
+            }));
+        }
         function showMore() {
             window.addEventListener("load", (function(e) {
                 const showMoreBlocks = document.querySelectorAll("[data-showmore]");
@@ -4069,6 +4078,7 @@
         isWebp();
         addTouchClass();
         menuInit();
+        menuCloseBackDrop();
         tabs();
         showMore();
         rippleEffect();
