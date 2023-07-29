@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230724123442">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230729083555">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="80" data-scroll-show class="header">
 			<div class="header__container">
 				<div class="header_logo">
 					<a class="logo" href="#">SmartSpace</a>
@@ -58,8 +58,8 @@
 							</p>
 							<div class="left__inner-form">
 								<form class="left__form form">
-									<input class="form__input" placeholder="Enter Zipcode to search properties" type="text" required />
-									<button class="form__button button__red button__red_square">
+									<input class="form__input" method="post" autocomplete="on" name="zipcode" placeholder="Enter Zipcode to search properties" type="text" required />
+									<button data-ripple class="form__button button__red button__red_square" type="submit">
 										Search Now!
 									</button>
 								</form>
@@ -80,12 +80,12 @@
 					<div class="action__partners partners">
 						<h5 class="partners__title">Our Amazing Partners</h5>
 						<div class="partners__wrapper">
-							<img class="partners__img" src="img/partners/1.svg" alt="" />
-							<img class="partners__img" src="img/partners/2.svg" alt="" />
-							<img class="partners__img" src="img/partners/3.svg" alt="" />
-							<img class="partners__img" src="img/partners/4.svg" alt="" />
-							<img class="partners__img" src="img/partners/5.svg" alt="" />
-							<img class="partners__img" src="img/partners/6.svg" alt="" />
+							<img class="partners__img" src="img/partners/1.svg" alt="1" />
+							<img class="partners__img" src="img/partners/2.svg" alt="2" />
+							<img class="partners__img" src="img/partners/3.svg" alt="3" />
+							<img class="partners__img" src="img/partners/4.svg" alt="4" />
+							<img class="partners__img" src="img/partners/5.svg" alt="5" />
+							<img class="partners__img" src="img/partners/6.svg" alt="6" />
 						</div>
 					</div>
 					<div class="action__arows arows">
@@ -97,9 +97,9 @@
 
 			<section class="haw-is-works">
 				<div class="haw-is-works__container">
-					<h2 class="haw-is-works__title">How it works?</h2>
+					<h2 class="haw-is-works__title" data-aos="fade-up">How it works?</h2>
 					<div class="haw-is-works__items">
-						<article class="haw-is-works__item haw-is-works-card">
+						<article data-aos="fade-right" class="haw-is-works__item haw-is-works-card">
 							<div class="haw-is-works-card__image-ibg">
 								<img src="img/hav-it-works/1.svg" alt="hav-it-works-icon1" width="90px" height="90px" />
 							</div>
@@ -110,7 +110,7 @@
 								calling.
 							</p>
 						</article>
-						<article class="haw-is-works__item haw-is-works-card">
+						<article class="haw-is-works__item haw-is-works-card" data-aos="fade-right" data-aos-delay="100">
 							<div class="haw-is-works-card__image-ibg">
 								<img src="img/hav-it-works/2.svg" alt="hav-it-works-icon2" width="90px" height="90px" />
 							</div>
@@ -121,7 +121,7 @@
 								gravit and moonlight.
 							</p>
 						</article>
-						<article class="haw-is-works__item haw-is-works-card">
+						<article class="haw-is-works__item haw-is-works-card" data-aos="fade-right" data-aos-delay="200">
 							<div class="haw-is-works-card__image-ibg">
 								<img src="img/hav-it-works/3.svg" alt="hav-it-works-icon3" width="90px" height="90px" />
 							</div>
@@ -138,7 +138,7 @@
 
 			<section class="real-deals">
 				<div class="real-deals__container">
-					<div class="real-deals__proposel proposel">
+					<div class="real-deals__proposel proposel" data-aos="fade-left">
 						<div class="proposel__info">
 							<h2 class="proposel__title">Best Real Estate Deals</h2>
 							<p class="proposel__text">
@@ -150,7 +150,7 @@
 							<a href="#">View All Property</a>
 						</button>
 					</div>
-					<div data-tabs data-tabs-animate="300" class="real-deals__tabs tabs">
+					<div data-tabs data-tabs-animate="300" class="real-deals__tabs tabs" data-aos="fade-right">
 						<nav data-tabs-titles class="tabs__navigation">
 							<button type="button" class="tabs__title _tab-active">
 								Residential Property
@@ -221,7 +221,7 @@
 				<div class="featured__container">
 					<h2 class="featured__title">Featured Listing of the Week</h2>
 					<div class="featured__info info">
-						<div class="info__left left-info">
+						<div class="info__left left-info" data-aos="fade-down">
 							<div class="left-info__photo1">
 								<div class="left-info__image-ibg">
 									<picture><source srcset="img/futured/1.webp" type="image/webp"><img src="img/futured/1.jpg" alt="1" /></picture>
@@ -233,7 +233,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="info__right right-info">
+						<div class="info__right right-info" data-aos="fade-up">
 							<div class="right-info__about">
 								<h3 class="right-info__title">
 									The and collecting for the motionless difficulty son.
@@ -279,11 +279,11 @@
 
 			<section class="revues">
 				<div class="revues__container">
-					<h2 class="revues__title">
+					<h2 class="revues__title" data-aos="fade-right">
 						Loved by businesses, and individuals across the globe.
 					</h2>
 					<div class="revues__cards">
-						<article class="revues__card card">
+						<article class="revues__card card" data-aos="fade-left" data-aos-delay="">
 							<div class="card__up">
 								<div class="card__stars">
 									<img src="img/stars.svg" alt="stars" />
@@ -306,7 +306,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="revues__card card">
+						<article class="revues__card card" data-aos="fade-left" data-aos-delay="100">
 							<div class="card__up">
 								<div class="card__stars">
 									<img src="img/stars.svg" alt="stars" />
@@ -328,7 +328,7 @@
 								</div>
 							</div>
 						</article>
-						<article class="revues__card card">
+						<article class="revues__card card" data-aos="fade-left" data-aos-delay="200">
 							<div class="card__up">
 								<div class="card__stars">
 									<img src="img/stars.svg" alt="stars" />
@@ -372,9 +372,13 @@
 
 			<section class="form-section">
 				<div class="form-section__container">
-					<h2 class="form-section__title">Get Our Newsletter</h2>
-					<h3 class="form-section__sub-title">To join the worldwide community</h3>
-					<form class="form-section__inner" action="#">
+					<h2 class="form-section__title" data-aos="fade-up" data-aos-delay="">
+						Get Our Newsletter
+					</h2>
+					<h3 class="form-section__sub-title" data-aos="fade-up" data-aos-delay="150">
+						To join the worldwide community
+					</h3>
+					<form class="form-section__inner" data-aos="fade-up" data-aos-delay="300">
 						<label class="form-section__plaseholder" for="email">Type your Email Address</label>
 						<input class="form-section__input" name="email" type="email" value="shakir260@gmail.com" required />
 						<button class="form-section__button button__red">Send Now</button>
@@ -460,7 +464,7 @@
 			</ul>
 		</div>
 	</aside>
-	<script src="js/app.min.js?_v=20230724123442"></script>
+	<script src="js/app.min.js?_v=20230729083555"></script>
 </body>
 
 </html>
